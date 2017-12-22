@@ -1,0 +1,310 @@
+/* You may set the width and height of container/section elements in percentages. 
+DO NOT USE PERCENTAGES IN TEXTS AND IMAGES : No responsiveness  */
+
+@font-face {
+	font-family: Gotham;
+	src: url(../fonts/Gotham-Bold.otf);
+}
+
+body {
+	background: white;
+}
+
+.container {
+	background-color: #99ba75;
+	width: 1440px;
+	height: 900px;
+}
+
+.container2{
+	width: 1440px;
+	height: 900px;
+
+}
+
+
+
+/*-------------------->DIV ONE<--------------------*/
+
+
+.vert {
+	font-family: Georgia;
+	font-size: 1em;
+	font-weight: bold;
+	letter-spacing: 4.5em;
+	text-align: center;
+	position: relative;
+	top: 250px;
+	color: black;
+}
+
+.style {
+	font-family: Gotham;
+	font-weight: bold;	
+	font-size: 7em;
+	float: left;
+	margin-left: 140px;
+	color: white;
+	position: absolute;
+	top: 100px;
+	display: inline-block;
+
+}
+
+.arrow { 
+	background: url("../images/arrow.png");
+	position: absolute;
+	width: 20px;
+	height: 20px;
+}
+
+@-webkit-keyframes s_move {
+	50% { top: 295px; opacity: 1;}
+	0%,100%{ top: 700px; opacity: 0; }
+}
+
+#s {
+	position: relative;
+	top: 295px;
+	-webkit-animation: s_move 9s infinite ease-out;
+}
+
+@-webkit-keyframes p_move {
+	50% { top: 295px; opacity: 1}
+	0%,100%{ top: 35px; opacity: 0; }
+}
+
+#p {
+	position: relative;
+	top: 295px;
+	-webkit-animation: p_move 9s infinite ease-out;
+}
+
+@-webkit-keyframes a_move {
+	50%{ top: 295px; opacity: 1; }
+	0%,100% { top: -200px; opacity: 0; }
+}
+
+#a {
+	position: relative;
+
+	-webkit-animation: a_move 9s infinite ease-out;
+}
+
+@-webkit-keyframes c_move {
+	50% { top: 295px; opacity: 1;}
+	0%,100%{ top: 400px; opacity: 0; }
+}
+
+#c {
+	position: relative;
+	top: 295px;
+	-webkit-animation: c_move 9s infinite ease-out;
+}
+
+@-webkit-keyframes e_move {
+	50% { top: 295px; opacity: 1;}
+	0%,100%{ top: 50px; opacity: 0; }
+}
+
+#e {
+	position: relative;
+	top: 295px;
+	-webkit-animation: e_move 9s infinite ease-out;
+}
+
+@-webkit-keyframes l_move {
+	50% { top: 295px; opacity: 1;}
+	0%,100%{ top: -100px; opacity: 0; }
+}
+
+#l {
+	position: relative;
+	top: 295px;
+	-webkit-animation: l_move 9s infinite ease-out;
+}
+
+/*-------------------->DIV TWO<--------------------*/
+
+ .text { 
+	font-family: Georgia;
+	font-size: 11px;
+	hyphens: auto;
+	color: white;
+	line-height: 150%;
+}
+
+#p1 {
+	position: absolute;
+	left: 950px;
+	margin-top: 50px;
+
+	width: 300px;
+	height: 145px;
+
+	line-height: 150%;
+	background: #99ba75;
+	padding: 10px;
+	z-index: 1;
+}
+
+
+#p2 {
+	position: absolute;
+	left: 0px;
+	margin-top: 0px;
+
+	width: 300px;
+	height: 145px;
+
+	line-height: 150%;
+	background: #99ba75;
+	padding: 10px;
+	z-index: 1;
+}
+
+#p3 {
+	position: absolute;
+	left: -600px;
+	margin-top: 800px;
+
+	width: 500px;
+	height: 97px;
+	padding: 10px;
+
+	background: #99ba75;
+}
+
+.style {
+	font-family: Gotham;
+	font-size: 5em;
+	font-weight: bold;
+	height: 700px;
+	line-height: 100%;
+}
+
+.p4 {
+	position: absolute;
+	left: -700px;
+	margin-top: 420px;
+}
+
+.p5 {
+	position: absolute;
+	left: -125px;
+	margin-top: 1228px;
+}
+
+
+/*---------------------------------------->IMAGES*/
+
+.central {
+	position: absolute;
+	left: -800px;
+	margin-top: 0px;
+	width: 1400px;
+	height: 900px;
+	background: url("../images/central_park.jpg") no-repeat;
+	z-index: -10; 
+}
+
+.leaf {
+	position: absolute;
+	margin-top: 760px;
+	left: -200px;
+
+	width: 500px;
+	height: 600px;
+	background: url("../images/leafy.jpg") no-repeat;
+	z-index: -1; 
+}
+
+/*----------------------------->TRANSFORMING TEXT*/
+
+@-webkit-keyframes d1_fade { 
+	0%,100% { opacity: 0; }
+	50% { opacity: 1; }
+}
+
+.d1 { 
+	color: white;
+
+	opacity: 0;
+	-webkit-animation: d1_fade 7s infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes d2_fade { 
+	0%,100% { opacity: 0; }
+	50% { opacity: 1; }
+}
+
+.d2 { 
+	color: white;
+
+	opacity: 0;
+	-webkit-animation: d2_fade 7s infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+
+@-webkit-keyframes d3_fade { 
+	0%,100% { opacity: 0; }
+	50% { opacity: 1; }
+}
+
+.d3 { 
+	color: black;
+
+	opacity: 0;
+	-webkit-animation: d3_fade 7s infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 4s;
+}
+
+@-webkit-keyframes d4_fade { 
+	0%,100% { opacity: 0; }
+	50% { opacity: 1; }
+}
+
+#d4 { 
+	opacity: 0;
+	-webkit-animation: d4_fade 3s infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1s;
+	text-align: justify;
+	letter-spacing: 1.7em;
+}
+
+.hi { 
+	font-family: Georgia;
+	font-size: 1em;
+	font-weight: bold;
+	color: black;
+	}
+
+.extra {
+	position: absolute;
+	left: -700px;
+	top: 1700px;
+}
+
+.extra1 {
+	position: absolute;
+	left: -250px;
+	top: 1700px;
+}
+.extra2 {
+	position: absolute;
+	left: 190px;
+	top: 1700px;
+}
+
+
+
+
+
+
+
+
